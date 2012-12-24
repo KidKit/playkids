@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+	<title>Play</title> 
+	
+	<meta name="viewport" content="width=device-width, 
+    user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0" />
+
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.2.0.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.theme-1.2.0.css" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.2.0.css" />
+	<link rel="stylesheet" href="css/customed.css" />
+	<script src="js/jQuery_prod.js"></script>
+	<script type="text/javascript" src="js/dibuja.js"></script>
+	<script type="text/javascript" src="js/puzzle.js"></script>
+	<script src="js/jquery.mobile-1.2.0.js"></script>
+	 
+	<script type="text/javascript" src="js/cordova-2.2.0.js"></script>
+</head> 
+
+<body> 
+	<div data-role="page"> 
+		<div data-role="content" id="principal">
+		<img src="css/images/logo.png" id="logo"/>	
+		<img src="css/images/logoAnd.png" id="logoAnd"/>	
+		<img src="css/images/ab.png" id="ab"/>
+		<ul data-role="listview" >
+			<div data-role="controlgroup">
+				<li data-role="control" >
+				<a href="#Mate" data-role="button" >
+					<div data-inline="true">
+						<img src="css/images/m.png" data-inline="true"  />
+					</div>
+					<div data-inline="true">
+						<h2>Matem&aacute;ticas</h2>
+						<p>Este juego es de Mate</p>
+					</div>
+					
+				</a></li>
+			<li><a href="#Leng" data-role="button">
+				<img src="css/images/l.png"/>
+					<h2>Lenguaje</h2>
+					<p>Este juego es de Lenguaje</p>
+				</a></li>
+			<li><a href="#Paint" data-role="button">
+				<img src="css/images/p.png"/>
+					<h2>Pintar</h2>
+					<p>Este juego es para pintar</p>
+				</a></li>
+			<li><a href="#" data-role="button">
+				<img src="css/images/x.png"/>
+				<h2>Salir</h2>
+				</a></li>
+			</div>
+			
+		</ul>
+	</div> 
+	<div data-role="footer" data-position="fixed">PIE</div> 
+	</div>
+
+	<div data-role="page" id="Mate" data-add-back-btn="true"> 
+		<div data-role="header" data-theme="c">PlayKids</div> 
+
+		<div data-role="content">
+			<h1>Matem&aacute;ticas</h1>		
+		</div> 
+		<div data-role="footer">jajaja</div> 
+	</div>
+
+	<div data-role="page" id="Leng" data-add-back-btn="true"> 
+		<div data-role="content">
+			<img src="css/images/l.png" data-inline="true" class="imagen-titulo"/>
+			<h1 data-inline="true" class="texto-titulo">Vocal Puzzle</h1><br/>
+			<canvas id="puzzle" width="765px" height="765px" class="redondeado"></canvas>
+			<div id="panel-puzzle"><br/>
+				<section id="numbers" class="redondeado">
+					<img src="css/images/irsp.png" id="pan-puz-2" class="pan-puz"/>
+			       	<img src="css/images/irsp.png" id="pan-puz-3" class="pan-puz"/>
+			       	<img src="css/images/irsp.png" id="pan-puz-4" class="pan-puz"/>
+			       	<img src="css/images/irsp.png" id="pan-puz-R" class="pan-puz"/>
+				</section>
+				<section id="vocals" class="redondeado">
+					<img src="css/images/irsp.png" id="pan-puz-A" class="pan-puzx"/>
+					<img src="css/images/irsp.png" id="pan-puz-E" class="pan-puzx"/>
+					<img src="css/images/irsp.png" id="pan-puz-I" class="pan-puzx"/>
+					<img src="css/images/irsp.png" id="pan-puz-O" class="pan-puzx"/>
+					<img src="css/images/irsp.png" id="pan-puz-U" class="pan-puzx"/>
+				</section>
+		       	
+			</div>
+			 
+			
+		</div> 
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">PIE</div> 
+	</div>
+
+	<div data-role="page" id="Paint">  
+		<div data-role="content">
+			<img src="css/images/p.png" data-inline="true" class="imagen-titulo"/>
+			<h1 data-inline="true" class="texto-titulo">Paint</h1>	
+			<div id="canvasDiv">
+			      <canvas id="canvasSignature" width="770px" height="720px" class="redondeado"></canvas>
+			      <div class="paleta">
+				       <a href="#" data-role="none" class="boton-panel" ><img id="black" src="css/images/black.png"></a> 
+					   <a href="#" data-role="none" class="boton-panel" ><img id="sblack" src="css/images/sblack.png"></a> 
+					   <a href="#" data-role="none" class="boton-panel" ><img id="brow" src="css/images/brow.png"></a>    
+					   <a href="#" data-role="none" class="boton-panel" > <img id="blue" src="css/images/blue.png"></a>  
+					   <a href="#" data-role="none" class="boton-panel" ><img id="sblue" src="css/images/sblue.png"></a>
+					   <a href="#" data-role="none" class="boton-panel" ><img id="violeta" src="css/images/violeta.png"></a>   
+			      </div>
+				   <div class="paleta">
+				   		<a href="#" data-role="none" class="boton-panel" > <img id="pink" src="css/images/pink.png"></a>
+					   <a href="#" data-role="none" class="boton-panel" ><img id="red" src="css/images/red.png"></a>
+					   <a href="#" data-role="none" class="boton-panel" ><img id="orage" src="css/images/orage.png"></a>
+					   <a href="#" data-role="none" class="boton-panel" ><img id="yellow" src="css/images/yellow.png"></a>
+					   <a href="#" data-role="none" class="boton-panel" ><img id="sgreen" src="css/images/sgreen.png"></a>   
+					   <a href="#" data-role="none" class="boton-panel" ><img id="green" src="css/images/green.png"></a>	
+				   </div>
+
+				   
+				   <a href="#" data-role="none" class="boton-panel" ><img id="bt" src="css/images/pincel.png"></a>
+			       <a href="#" data-role="none" class="boton-panel" ><img id="s" src="css/images/escala.png"></a>
+			       <a href="#" data-role="none" class="boton-panel" ><img id="md" src="css/images/escala.png"></a>
+			       <a href="#" data-role="none" class="boton-panel" ><img id="g" src="css/images/escala.png"></a>
+			       <a href="#" data-role="none" class="boton-panel" ><img id="xg" src="css/images/escala.png"></a>
+			       <a href="#" data-role="none" class="boton-panel" ><img id="goma" src="css/images/goma.png"></a>
+   			</div>	
+		</div> 
+		<div data-role="footer" data-position="fixed" data-add-back-btn="true">PIE</div> 
+	</div>
+
+	
+</body>
+</html>
